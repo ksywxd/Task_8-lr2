@@ -38,7 +38,6 @@ double outradius(double a, double b, double c, double S) {
     return (a * b * c) / (4 * S);
 }
 double my_cos(double a, double b, double c) {
-    if (b == c) return 0;
     return ((b * b + c * c - a * a) / (2 * b * c));
     }
 
