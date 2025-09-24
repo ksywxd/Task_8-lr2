@@ -42,7 +42,7 @@ double my_cos(double a, double b, double c) {
     }
 
 double angle(double a, double b, double c) {
-    return acos((b * b + c * c - a * a) / (2 * b * c)); 
+    return acos((b * b + c * c - a * a) / (2 * b * c));
 }
 
 int main() {
