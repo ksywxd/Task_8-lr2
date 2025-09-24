@@ -59,7 +59,8 @@ double arccos(double x) {
     for (int n = 1; n < 20; n++) {
         term *= x2 * (2 * n - 1) * (2 * n - 1) / (4 * n * n + 2 * n);
         result += term;
-        if (std::abs(term) < 1e-10) break;
+        //if (std::abs(term) < 1e-10) break;
+        if (term < 1e-10 && term > -1e-10) break;
     }
 
     return 3.1415926535 / 2 - result;
