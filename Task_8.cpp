@@ -1,9 +1,10 @@
 ﻿#include <iostream>
 
 double cor(double a) {
-    double low = 0, high = a, mid, mid2 = mid * mid;
+    double low = 0, high = a, mid;  
     for (int i = 0; i < 100; i++) {
         mid = (low + high) / 2;
+        double mid2 = mid * mid;
         if (mid2 == a) return mid;
         else if (mid2 < a) low = mid;
         else if (mid2 > a) high = mid;
